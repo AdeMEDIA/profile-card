@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-darkblue: hsl(229, 23%, 23%);
+    --dark-grayishblue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    font-family: "Kumbh Sans";
+    background: url("images/bg-pattern-top.svg"), 
+    url("images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: right 42vw bottom 45vh, left 45vw top 42vh;
+    background-color: var(--dark-cyan);
+
+    @media (min-width: 768px) {
+        background-position: right 52vw bottom 35vh, left 50vw top 50vh;
+    }
+}
+
+.container {
+    background-color: white;
+   margin: 10px;
+   max-width: 375px;
+   display: flex;
+   flex-direction: column;
+   border-radius: 15px;
+   overflow: hidden;
+}
+.hero {
+    width: 100%;
+}
+
+.hero_pics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pics {
+    border-radius: 50%;
+    max-width: 100px;
+    border: 5px solid white;
+    position: relative;
+    bottom: 50px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -35px;
+    margin-bottom: 10px;
+    line-height: 1.8rem;
+}
+
+.city {
+    margin-top: 5px;
+}
+.city,
+#age {
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: var(--dark-gray);
+}
+.det_container {
+    max-width: 350px;
+    height: auto;
+    border-top: 1px solid var(--dark-gray);
+}
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 0 20px 0;
+}
+
+.tit {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.tit_parag {
+    font-size: smaller;
+    text-align: center;
+    color: var(--dark-grayishblue);
+    display: block;
+    font-size: .9rem;
+    font-weight: 300;
+    letter-spacing: .1rem;
+}
+/*
+.attribution {
+     font-size: 1px; 
+     text-align: center;
+     color: aliceblue;
+}
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+     font-style: oblique;
+     font-size: small;
+     border-bottom: 2px solid var(--very-darkblue);
+     border-bottom-left-radius: 8px;
+     border-bottom-right-radius: 8px;
+}*/
